@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Zuniga.Views.IessPage"
+    Title="Aporte IESS"
+    BackgroundColor="#F4F7FB">
+
+    <ScrollView>
+
+        <VerticalStackLayout
+            Padding="24,40"
+            Spacing="20">
+
+            <Label
+                Text="Calculadora de Aporte IESS"
+                FontSize="28"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"
+                TextColor="#16324F" />
+
+            <Label
+                Text="Ingresa tus datos para calcular tu aporte"
+                FontSize="15"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"
+                TextColor="#667085"
+                Margin="0,-10,0,12" />
+
+            <Border
+                BackgroundColor="White"
+                Stroke="#D0D5DD"
+                StrokeThickness="1"
+                StrokeShape="RoundRectangle 14"
+                Padding="14,2">
+
+                <Entry
+                    x:Name="NombreEntry"
+                    Placeholder="Nombre"
+                    FontSize="16"
+                    TextColor="#1D2939"
+                    PlaceholderColor="#98A2B3"
+                    ClearButtonVisibility="WhileEditing"
+                    BackgroundColor="Transparent" />
+
+            </Border>
+
+            <Border
+                BackgroundColor="White"
+                Stroke="#D0D5DD"
+                StrokeThickness="1"
+                StrokeShape="RoundRectangle 14"
+                Padding="14,2">
+
+                <Entry
+                    x:Name="ApellidoEntry"
+                    Placeholder="Apellido"
+                    FontSize="16"
+                    TextColor="#1D2939"
+                    PlaceholderColor="#98A2B3"
+                    ClearButtonVisibility="WhileEditing"
+                    BackgroundColor="Transparent" />
+
+            </Border>
+
+            <Border
+                BackgroundColor="White"
+                Stroke="#D0D5DD"
+                StrokeThickness="1"
+                StrokeShape="RoundRectangle 14"
+                Padding="14,2">
+
+                <Entry
+                    x:Name="EdadEntry"
+                    Placeholder="Edad"
+                    Keyboard="Numeric"
+                    FontSize="16"
+                    TextColor="#1D2939"
+                    PlaceholderColor="#98A2B3"
+                    ClearButtonVisibility="WhileEditing"
+                    BackgroundColor="Transparent" />
+
+            </Border>
+
+            <Border
+                BackgroundColor="White"
+                Stroke="#D0D5DD"
+                StrokeThickness="1"
+                StrokeShape="RoundRectangle 14"
+                Padding="14,2">
+
+                <Entry
+                    x:Name="SalarioEntry"
+                    Placeholder="Salario"
+                    Keyboard="Numeric"
+                    FontSize="16"
+                    TextColor="#1D2939"
+                    PlaceholderColor="#98A2B3"
+                    ClearButtonVisibility="WhileEditing"
+                    BackgroundColor="Transparent" />
+
+            </Border>
+
+            <Button
+                x:Name="CalcularAporteButton"
+                Text="Calcular Aporte"
+                FontSize="17"
+                FontAttributes="Bold"
+                TextColor="White"
+                BackgroundColor="#2563EB"
+                CornerRadius="14"
+                HeightRequest="54"
+                Margin="0,12,0,0"
+                Clicked="CalcularAporteButton_Clicked" />
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>
